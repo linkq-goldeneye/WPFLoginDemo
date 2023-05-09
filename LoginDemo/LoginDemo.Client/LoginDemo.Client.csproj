@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
+		<PackageReference Include="MaterialDesignColors" Version="2.0.9" />
+		<PackageReference Include="MaterialDesignThemes" Version="4.6.1" />
+		<PackageReference Include="Microsoft.NETCore.Platforms" Version="7.0.0" />
+		<PackageReference Include="Microsoft.NETCore.Targets" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+		<PackageReference Include="Prism.Core" Version="8.1.97" />
+		<PackageReference Include="RestSharp" Version="108.0.3" />
+		<PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Views\List\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\LoginDemo.Assets\LoginDemo.Assets.csproj" />
+	  <ProjectReference Include="..\LoginDemo.Service\LoginDemo.Service.csproj" />
+	  <ProjectReference Include="..\LoginDemo.Share\LoginDemo.Share.csproj" />
+	</ItemGroup>
+</Project>
